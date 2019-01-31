@@ -1,0 +1,30 @@
+{
+  "name": "javascript-vscode-extension",
+  "displayName": "Simple JavaScript snippets",
+  "description": "Simple JavaScript snippets",
+  "version": "1.0.0",
+  "publisher": "lzrnic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zrna/javascript-vscode-extension.git"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

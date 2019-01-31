@@ -1,0 +1,136 @@
+{
+  "Console.log": {
+    "prefix": "csl",
+    "body": ["console.log(${1:value});"],
+    "description": "Creates default console.log(value);"
+  },
+  "Function": {
+    "prefix": "func",
+    "body": ["function ${1:functionName}(){", " ${2:// do something}", "};"],
+    "description": "Creates default function"
+  },
+  "Function with 1 param": {
+    "prefix": "fp1",
+    "body": [
+      "function ${1:functionName}(${2:paramName}){",
+      " ${3:// do something}",
+      "};"
+    ],
+    "description": "Creates default function with 1 param"
+  },
+  "Function with 2 params": {
+    "prefix": "fp2",
+    "body": [
+      "function ${1:functionName}(${2:paramName1},${3:paramName2}){",
+      " ${4:// do something}",
+      "};"
+    ],
+    "description": "Creates default function with 2 params"
+  },
+  "Arrow Function": {
+    "prefix": "arrf",
+    "body": ["${1:functionName} = () => {", " ${2:// do something}", "};"],
+    "description": "Creates default arrow function"
+  },
+  "Arrow Function with 1 param": {
+    "prefix": "afp1",
+    "body": [
+      "${1:functionName} = (${2:paramName}) => {",
+      " ${3:// do something}",
+      "};"
+    ],
+    "description": "Creates default arrow function with 1 parameter"
+  },
+  "Arrow Function with 2 params": {
+    "prefix": "afp2",
+    "body": [
+      "${1:functionName} = (${2:paramName1},${3:paramName2}) => {",
+      " ${4:// do something}",
+      "}; "
+    ],
+    "description": "Creates default arrow function with 2 parameters"
+  },
+  "Const Object": {
+    "prefix": "objC",
+    "body": ["const ${1:objName} = {", "  ${2:name}: ${3:value}", "}"],
+    "description": "Creates const object"
+  },
+  "Let Object": {
+    "prefix": "objL",
+    "body": ["let ${1:objName} = {", "  ${2:name}: ${3:value}", "}"],
+    "description": "Creates let object"
+  },
+  "Var Object": {
+    "prefix": "objV",
+    "body": ["var ${1:objName} = {", "  ${2:name}: ${3:value}", "}"],
+    "description": "Creates var object"
+  },
+  "if Statement": {
+    "prefix": "ifs",
+    "body": [
+      "if (${1:condition}){",
+      " ${2:// if condition is TRUE do something}",
+      "};"
+    ],
+    "description": "Creates if statement"
+  },
+  "if/else Statement": {
+    "prefix": "ifel",
+    "body": [
+      "if (${1:condition}){",
+      " ${2:// if condition is TRUE do something}",
+      "} else {",
+      " ${3:// do something else}",
+      "};"
+    ],
+    "decsription": "Creates if/else statement"
+  },
+  "if/else if/else Statement": {
+    "prefix": "ifelif",
+    "body": [
+      "if (${1:condition}){",
+      " ${2:// if condition is TRUE do something}",
+      "} else if (${3:condition}) {",
+      " ${4:// if first condition is false do something}",
+      "} else {",
+      "${5:// if both conditions are false do something}",
+      "};"
+    ],
+    "decsription": "Creates if/else if/else statement"
+  },
+  "Switch Statement": {
+    "prefix": "swca",
+    "body": [
+      "switch (${1:expression}){",
+      " case ${2:value1}:",
+      "   ${3:// do something}",
+      "   break;",
+      " case ${4:value2}:",
+      "   ${5:// do something}",
+      "   break;",
+      " default:",
+      "   ${6:// do something}",
+      "}"
+    ],
+    "description": "Switch case with 2 cases"
+  },
+  "For loop": {
+    "prefix": "floop",
+    "body": [
+      "for (let i = 0; i < ${1:something}; i++){",
+      "  ${2:// do something}",
+      "}"
+    ],
+    "description": "Creates default for loop"
+  },
+  "While loop": {
+    "prefix": "wloop",
+    "body": ["while (i < ${1:something}){", " ${2:// do something}", "}"],
+    "description": "Creates default while loop"
+  },
+  "Do While": {
+    "prefix": "dwloop",
+    "body": ["do {", " ${2:// do something}", "}", "while(${3:condition});"],
+    "description": "Creates default Do/While loop"
+  }
+}
