@@ -2,6 +2,12 @@
 
 JavaScript extension which will help you with everyday needs for JavaScript commands.
 
+![Version](https://vsmarketplacebadge.apphb.com/version-short/lzrnic.javascript-vscode-extension.svg)
+
+![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/lzrnic.javascript-vscode-extension.svg)
+
+Here is direct link to marketplace [Simple JavaScript snippete](https://marketplace.visualstudio.com/items?itemName=lzrnic.javascript-vscode-extension)
+
 More snippets will come soon!
 
 ## Release Notes
