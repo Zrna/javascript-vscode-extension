@@ -2,7 +2,7 @@
   "name": "javascript-vscode-extension",
   "displayName": "Simple JavaScript snippets",
   "description": "Simple JavaScript snippets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "lzrnic",
   "repository": {
     "type": "git",
