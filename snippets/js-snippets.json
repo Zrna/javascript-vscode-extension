@@ -4,6 +4,11 @@
     "body": ["console.log(${1:value});"],
     "description": "Creates default console.log(value);"
   },
+  "Console.log text": {
+    "prefix": "cslt",
+    "body": ["console.log('${1:text}', ${2:value});"],
+    "description": "Creates default console.log('text', value); with text"
+  },
   "Function": {
     "prefix": "func",
     "body": ["function ${1:functionName}(){", " ${2:// do something}", "};"],

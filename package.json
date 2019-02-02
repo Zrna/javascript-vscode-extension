@@ -19,11 +19,19 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/js-snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react-snippets.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/js-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-snippets.json"
       }
     ]
   }

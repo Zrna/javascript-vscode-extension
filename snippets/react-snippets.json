@@ -1,0 +1,115 @@
+{
+  "Import React": {
+    "prefix": "imr",
+    "body": ["import React from 'react';"],
+    "description": "Imports react"
+  },
+  "Import React DOM": {
+    "prefix": "imrd",
+    "body": ["import ReactDOM from 'react-dom';"],
+    "description": "Imports React DOM"
+  },
+  "Import Component": {
+    "prefix": "imrc",
+    "body": ["import React, { Component } from 'react';"],
+    "description": "Imports React Component"
+  },
+  "Import Custom Component": {
+    "prefix": "imcc",
+    "body": ["import ${1:ComponentName} from '${2:ComponentLocation}';"],
+    "description": "Imports Custom Component"
+  },
+  "Import React PureComponent": {
+    "prefix": "imrpc",
+    "body": ["import React, { PureComponent } from 'react';"],
+    "description": "Imports React PureComponent"
+  },
+  "Creates state": {
+    "prefix": "cst",
+    "body": ["state = {", " ${1:key}: ${2:value}", "}"],
+    "desctiption": "Creates state with 1 key:value"
+  },
+  "Creates componentDidMount": {
+    "prefix": "cdm",
+    "body": ["componentDidMount = () => {", " ${1:// do something}", "}"],
+    "description": "Creates componentDidMount"
+  },
+  "Creates componentWillMount": {
+    "prefix": "cwm",
+    "body": ["componentWillMount = () => {", " ${1:// do something}", "}"],
+    "description": "Creates componentWillMount "
+  },
+  "Creates componentWillUnmount": {
+    "prefix": "cwun",
+    "body": ["componentWillUnmount = () => {", " ${1:// do something}", "}"],
+    "description": "Creates componentWillUnmount"
+  },
+  "Creates componentWillReceiveProps": {
+    "prefix": "cwrp",
+    "body": [
+      "componentWillReceiveProps = (${1:nextProps}) => {",
+      " ${2:// do something}",
+      "}"
+    ],
+    "description": "Creates componentWillReceiveProps"
+  },
+  "Creates shouldComponentUpdate": {
+    "prefix": "scup",
+    "body": [
+      "shouldComponentUpdate = (${1:nextProps}, ${2:nextState}) => {",
+      " ${3:// do something}",
+      "}"
+    ],
+    "description": "Creates shouldComponentUpdate"
+  },
+  "Creates componentWillUpdate": {
+    "prefix": "cwup",
+    "body": [
+      "componentWillUpdate = (${1:nextProps}, ${2:nextState}) => {",
+      " ${3:// do something}",
+      "}"
+    ],
+    "description": "Creates componentWillUpdate"
+  },
+  "Creates componentDidUpdate": {
+    "prefix": "cdup",
+    "body": [
+      "componentDidUpdate = (${1:prevProps}, ${2:prevState}) => {",
+      " ${3:// do something}",
+      "}"
+    ],
+    "description": "Creates componentDidUpdate"
+  },
+  "Creates React Class Component": {
+    "prefix": "rcc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "$0",
+      "class ${1:ClassName} extends Component {",
+      " render() {",
+      "   return (",
+      "     <div></div>",
+      "   )",
+      " }",
+      "}",
+      "$0",
+      "export default ${1:ClassName};"
+    ],
+    "description": "Creates React Class Component"
+  },
+  "Creates React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "$0",
+      "const ${1:ComponentName} = () => {",
+      " return (",
+      "   <div></div>",
+      " )",
+      "}",
+      "$0",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Creates React Functional Component"
+  }
+}
