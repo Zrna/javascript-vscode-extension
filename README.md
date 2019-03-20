@@ -14,10 +14,11 @@ More snippets will come soon!
 
 - JavaScript
 - React JS
+- TypeScript (.ts and .tsx)
 
 ## Release Notes
 
-Current version is 1.0.1 [2 Feb 2019]
+Current version is 1.0.2 [20 Mar 2019]
 
 ## Author
 

@@ -2,7 +2,7 @@
   "name": "javascript-vscode-extension",
   "displayName": "Simple JavaScript snippets",
   "description": "Simple JavaScript snippets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "lzrnic",
   "repository": {
     "type": "git",
@@ -31,6 +31,18 @@
       },
       {
         "language": "javascriptreact",
+        "path": "./snippets/react-snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/js-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/js-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets/react-snippets.json"
       }
     ]
