@@ -2,7 +2,7 @@
 
 All notable changes to the JS/TS/ReactJS/Redux extension will be documented in this file.
 
-## [1.0.3] - 15 Jun 2019
+## [1.0.3] - 16 Jun 2019
 
 - Added snippets for Redux and react-redux
 - New extension name - ~~Simple JavaScript extension~~ -> JS/TS/ReactJS/Redux

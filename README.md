@@ -19,7 +19,7 @@ More snippets will come soon!
 
 ## Release Notes
 
-Current version is 1.0.3 [15 Jun 2019]
+Current version is 1.0.3 [16 Jun 2019]
 
 ## Author
 
