@@ -1,6 +1,11 @@
 # Change Log
 
-All notable changes to the "javascript-vscode-extension" extension will be documented in this file.
+All notable changes to the JS/TS/ReactJS/Redux extension will be documented in this file.
+
+## [1.0.3] - 15 Jun 2019
+
+- Added snippets for Redux and react-redux
+- New extension name - ~~Simple JavaScript extension~~ -> JS/TS/ReactJS/Redux
 
 ## [1.0.2] - 20 Mar 2019
 

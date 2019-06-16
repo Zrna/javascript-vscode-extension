@@ -1,6 +1,6 @@
-# javascript-vscode-extension
+# JS/TS/ReactJS/Redux snippets
 
-JavaScript extension which will help you with everyday needs for JavaScript commands.
+This extension provides snippets for JavaScript, TypeScript, ReactJS and Redux which will help you with everyday needs for commands.
 
 ![Version](https://vsmarketplacebadge.apphb.com/version-short/lzrnic.javascript-vscode-extension.svg)
 
@@ -12,13 +12,14 @@ More snippets will come soon!
 
 ## Supported
 
-- JavaScript
+- JavaScript (.js and .jsx)
 - React JS
 - TypeScript (.ts and .tsx)
+- Redux
 
 ## Release Notes
 
-Current version is 1.0.2 [20 Mar 2019]
+Current version is 1.0.3 [15 Jun 2019]
 
 ## Author
 
@@ -47,7 +48,26 @@ Luka Zrnić
 | `wloop→`  | Creates default _while_ loop                            |
 | `dwloop→` | Creates default _do/while_ loop                         |
 
----
+
+## Redux
+
+| Prefix   | Description                     |
+| -------- | --------------------------------|
+| `rdat→`  | Creates `const` for Action type |
+| `rdac→`  | Creates Redux Action            |
+| `rdr→`   | Creates Redux Reducer           |
+| `rdcr→`  | Creates Redux Combine Reducers  |
+| `rds→`   | Creates Redux Store             |
+
+### react-redux
+
+| Prefix     | Description                                                         |
+| ---------- | ------------------------------------------------------------------- |
+| `imrrdc→`  | `import { connect } from 'react-redux';`                            |
+| `imrrdp→`  | `import { Provider } from 'react-redux';`                           |
+| `mstp→`    | Creates `const mapStateToProps = (state) => { ... }`                |
+| `mdtp→`    | Creates `const mapDispatchToProps = (dispatch) => { ... }`          |
+
 
 ## React
 
