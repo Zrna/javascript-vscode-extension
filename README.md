@@ -6,7 +6,7 @@ This extension provides snippets for JavaScript, TypeScript, ReactJS and Redux w
 
 ![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/lzrnic.javascript-vscode-extension.svg)
 
-Here is direct link to marketplace [Simple JavaScript snippete](https://marketplace.visualstudio.com/items?itemName=lzrnic.javascript-vscode-extension)
+Here is direct link to marketplace [JS/TS/ReactJS/Redux snippets](https://marketplace.visualstudio.com/items?itemName=lzrnic.javascript-vscode-extension)
 
 More snippets will come soon!
 
