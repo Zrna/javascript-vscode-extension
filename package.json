@@ -1,8 +1,8 @@
 {
-  "name": "javascript-vscode-extension",
-  "displayName": "Simple JavaScript snippets",
-  "description": "Simple JavaScript snippets",
-  "version": "1.0.2",
+  "name": "js-ts-reactjs-redux-snippets",
+  "displayName": "JS/TS/ReactJS/Redux snippets",
+  "description": "Simple extension for JavaScript, TypeScript, ReactJS and Redux",
+  "version": "1.0.3",
   "publisher": "lzrnic",
   "repository": {
     "type": "git",
@@ -26,24 +26,44 @@
         "path": "./snippets/react-snippets.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/redux-snippets.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/js-snippets.json"
       },
       {
         "language": "javascriptreact",
         "path": "./snippets/react-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/redux-snippets.json"
       },
       {
         "language": "typescript",
         "path": "./snippets/js-snippets.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/react-snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/redux-snippets.json"
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/js-snippets.json"
       },
       {
         "language": "typescriptreact",
         "path": "./snippets/react-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/redux-snippets.json"
       }
     ]
   }
