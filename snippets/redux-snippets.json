@@ -1,104 +1,98 @@
 {
-    "Redux Action type": {
-        "prefix": "rdat",
-        "body": [
-            "export const ${1:ACTION_NAME} = '${1:ACTION_NAME}';"
-        ],
-        "description": "Creates const for Action type"
-    },
-    "Redux Action creator": {
-        "prefix": "rdac",
-        "body": [
-            "export const ${1:actionCreator} = (payload) => {",
-            "  return {",
-            "    type: 'ACTION_TYPE',",
-            "    payload",
-            "  }",
-            "};"
-        ],
-        "description": "Creates Redux Action"
-    },
-    "Redux Reducer": {
-        "prefix": "rdr",
-        "body": [
-            "const initialState = {}",
-            "$0",
-            "const ${1:reducerName} = (state = initialState, action) => {",
-            "  const newState = { ...state };",
-            "$0",
-            "  if (action.type === 'ACTION_TYPE'){",
-            "    // return something ",
-            "  } else {",
-            "    return newState",
-            "  };",
-            "};",
-            "$0",
-            "export default ${1:reducerName};"
-        ],
-        "description": "Creates Redux Reducer"
-    },
-    "Redux Combine Reducers": {
-        "prefix": "rdcr",
-        "body": [
-            "import { combineReducers } from 'redux';",
-            "$0",
-            "import ${1:reducerName} from '${2:reducerPath}';",
-            "$0",
-            "export default combineReducers({",
-            "  ",
-            "});"
-        ],
-        "description": "Creates Combine Reducers"
-    },
-    "Redux Store": {
-        "prefix": "rds",
-        "body": [
-            "import { createStore } from 'redux';",
-            "import rootReducer from '${1:reducerPath}';",
-            "$0",
-            "const store = createStore(",
-            "  rootReducer,",
-            "  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()",
-            ");",
-            "$0",
-            "export default store;"
-        ],
-        "description": "Creates Redux Store with DevTools settings"
-    },
-    "React Redux connect": {
-        "prefix": "imrrdc",
-        "body": [
-            "import { connect } from 'react-redux';"
-        ],
-        "description": "Imports react-redux connect"
-    },
-    "React Redux provider": {
-        "prefix": "imrrdp",
-        "body": [
-            "import { Provider } from 'react-redux';"
-        ],
-        "description": "Imports react-redux Provider"
-    },
-    "Map State to Props": {
-        "prefix": "mstp",
-        "body": [
-            "const mapStateToProps = (state) => {",
-            "  return {",
-            "    ${1:prop}: ${2:state.reducer.prop}",
-            "  };",
-            "};"
-        ],
-        "description": "Creates mapStateToProps"
-    },
-    "Map Dispatch to Props": {
-        "prefix": "mdtp",
-        "body": [
-            "const mapDispatchToProps = (dispatch) => {",
-            "  return {",
-            "    ${1:actionName}: () => dispatch(${2: })",
-            "  };",
-            "};"
-        ],
-        "description": "Creates mapDispatchToProps"
-    }
+  "Redux Action type": {
+    "prefix": "rdat",
+    "body": ["export const ${1:ACTION_NAME} = '${1:ACTION_NAME}';"],
+    "description": "Creates const for Action type"
+  },
+  "Redux Action creator": {
+    "prefix": "rdac",
+    "body": [
+      "export const ${1:actionCreator} = (payload) => {",
+      "  return {",
+      "    type: 'ACTION_TYPE',",
+      "    payload",
+      "  }",
+      "};"
+    ],
+    "description": "Creates Redux Action"
+  },
+  "Redux Reducer": {
+    "prefix": "rdr",
+    "body": [
+      "const initialState = {}",
+      "$0",
+      "const ${1:reducerName} = (state = initialState, action) => {",
+      "  const newState = { ...state };",
+      "$0",
+      "  if (action.type === 'ACTION_TYPE'){",
+      "    // return something ",
+      "  } else {",
+      "    return newState",
+      "  };",
+      "};",
+      "$0",
+      "export default ${1:reducerName};"
+    ],
+    "description": "Creates Redux Reducer"
+  },
+  "Redux Combine Reducers": {
+    "prefix": "rdcr",
+    "body": [
+      "import { combineReducers } from 'redux';",
+      "$0",
+      "import ${1:reducerName} from '${2:reducerPath}';",
+      "$0",
+      "export default combineReducers({",
+      "  ",
+      "});"
+    ],
+    "description": "Creates Combine Reducers"
+  },
+  "Redux Store": {
+    "prefix": "rds",
+    "body": [
+      "import { createStore } from 'redux';",
+      "import rootReducer from '${1:reducerPath}';",
+      "$0",
+      "const store = createStore(",
+      "  rootReducer,",
+      "  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()",
+      ");",
+      "$0",
+      "export default store;"
+    ],
+    "description": "Creates Redux Store with DevTools settings"
+  },
+  "React Redux connect": {
+    "prefix": "imrrdc",
+    "body": ["import { connect } from 'react-redux';"],
+    "description": "Imports react-redux connect"
+  },
+  "React Redux provider": {
+    "prefix": "imrrdp",
+    "body": ["import { Provider } from 'react-redux';"],
+    "description": "Imports react-redux Provider"
+  },
+  "Map State to Props": {
+    "prefix": "mstp",
+    "body": [
+      "const mapStateToProps = (state) => {",
+      "  return {",
+      "    ${1:prop}: ${2:state.reducer.prop}",
+      "  };",
+      "};"
+    ],
+    "description": "Creates mapStateToProps"
+  },
+  "Map Dispatch to Props": {
+    "prefix": "mdtp",
+    "body": [
+      "const mapDispatchToProps = (dispatch) => {",
+      "  return {",
+      "    ${1:actionName}: () => dispatch(${2: })",
+      "  };",
+      "};"
+    ],
+    "description": "Creates mapDispatchToProps"
+  }
 }
