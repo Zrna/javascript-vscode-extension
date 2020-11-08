@@ -2,6 +2,13 @@
 
 All notable changes to the JS/TS/ReactJS/Redux extension will be documented in this file.
 
+## [1.0.4] - 08 Nov 2020
+
+- Added snippets for:
+  - React Hooks
+  - Redux Toolkit
+  - `console.error()`
+
 ## [1.0.3] - 16 Jun 2019
 
 - Added snippets for Redux and react-redux
