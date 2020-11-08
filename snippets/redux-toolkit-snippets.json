@@ -1,0 +1,65 @@
+{
+  "Redux Toolkit Configure Store": {
+    "prefix": "rts",
+    "body": [
+      "import { configureStore } from '@reduxjs/toolkit';",
+      "$0",
+      "import ${1:reducer} from '${2:location}';",
+      "$0",
+      "export default configureStore({",
+      "  ${3:reducerName}: ${1:reducer},",
+      "});"
+    ],
+    "description": "Creates Redux Toolkit Configure Store"
+  },
+  "Redux Toolkit Create Slice": {
+    "prefix": "rtcs",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit';",
+      "$0",
+      "const initialState = {${1}};",
+      "$0",
+      "export const ${2:sliceName} = createSlice({",
+      "  name: '${3:name}',",
+      "  initialState,",
+      "  reducers: {",
+      "    ${4:reducerName}: (state, action) => {",
+      "      ${5}",
+      "    },",
+      "  },",
+      "});",
+      "$0",
+      "export const { ${4:reducerName} } = ${2:sliceName}.actions;",
+      "$0",
+      "export default ${2:sliceName}.reducer;"
+    ],
+    "description": "Creates Redux Toolkit Create Slice"
+  },
+  "Redux Toolkit Create Reducer": {
+    "prefix": "rtcr",
+    "body": [
+      "import { createAction, createReducer } from '@reduxjs/toolkit';",
+      "$0",
+      "const ${1:name} = createAction('${2:action}/${3:type}');",
+      "$0",
+      "const initialState = {${4}};",
+      "$0",
+      "const ${5:reducerName} = createReducer(initialState, builder => {",
+      "  builder",
+      "    .addCase(${1:name}, (state, action) => {",
+      "      ${6}",
+      "    });",
+      "});"
+    ],
+    "description": "Creates Redux Toolkit Create Reducer"
+  },
+  "Redux Toolkit Create Action": {
+    "prefix": "rtca",
+    "body": [
+      "import { createAction } from '@reduxjs/toolkit';",
+      "$0",
+      "const ${1:name} = createAction('${2:action}/${3:type}');"
+    ],
+    "description": "Creates Redux Toolkit Create Action"
+  }
+}
