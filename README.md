@@ -16,10 +16,11 @@ More snippets will come soon!
 - React JS
 - TypeScript (.ts and .tsx)
 - Redux
+- Redux Toolkit
 
 ## Release Notes
 
-Current version is 1.0.3 [16 Jun 2019]
+Current version is 1.0.4 [08 Nov 2020]
 
 ## Author
 
@@ -30,6 +31,7 @@ Luka Zrnić
 | Prefix    | Description                                             |
 | --------- | ------------------------------------------------------- |
 | `csl→`    | Creates default `console.log(value);`                   |
+| `cse→`    | Creates default `console.error(value);`                 |
 | `cslt→`   | Creates default `console.log('text', value);` with text |
 | `func→`   | Creates default function                                |
 | `fp1→`    | Creates function with **1** parameter                   |
@@ -48,26 +50,24 @@ Luka Zrnić
 | `wloop→`  | Creates default _while_ loop                            |
 | `dwloop→` | Creates default _do/while_ loop                         |
 
-
 ## Redux
 
-| Prefix   | Description                     |
-| -------- | --------------------------------|
-| `rdat→`  | Creates `const` for Action type |
-| `rdac→`  | Creates Redux Action            |
-| `rdr→`   | Creates Redux Reducer           |
-| `rdcr→`  | Creates Redux Combine Reducers  |
-| `rds→`   | Creates Redux Store             |
+| Prefix  | Description                     |
+| ------- | ------------------------------- |
+| `rdat→` | Creates `const` for Action type |
+| `rdac→` | Creates Redux Action            |
+| `rdr→`  | Creates Redux Reducer           |
+| `rdcr→` | Creates Redux Combine Reducers  |
+| `rds→`  | Creates Redux Store             |
 
 ### react-redux
 
-| Prefix     | Description                                                         |
-| ---------- | ------------------------------------------------------------------- |
-| `imrrdc→`  | `import { connect } from 'react-redux';`                            |
-| `imrrdp→`  | `import { Provider } from 'react-redux';`                           |
-| `mstp→`    | Creates `const mapStateToProps = (state) => { ... }`                |
-| `mdtp→`    | Creates `const mapDispatchToProps = (dispatch) => { ... }`          |
-
+| Prefix    | Description                                                |
+| --------- | ---------------------------------------------------------- |
+| `imrrdc→` | `import { connect } from 'react-redux';`                   |
+| `imrrdp→` | `import { Provider } from 'react-redux';`                  |
+| `mstp→`   | Creates `const mapStateToProps = (state) => { ... }`       |
+| `mdtp→`   | Creates `const mapDispatchToProps = (dispatch) => { ... }` |
 
 ## React
 
@@ -87,12 +87,26 @@ Luka Zrnić
 | `cwup→`  | `componentWillUpdate = (nextProps, nextState) => { // do something }`   |
 | `cdup→`  | `componentDidUpdate = (prevProps, prevState) => { // do something }`    |
 
+## React Hooks
+
+| Prefix   | Description                                                         |
+| -------- | ------------------------------------------------------------------- |
+| `rush→`  | `const [name, setName] = useState();`                               |
+| `rueh→`  | `useEffect(() => { });`                                             |
+| `rurh→`  | `const refName = useRef();`                                         |
+| `ruch→`  | `const value = useContext();`                                       |
+| `rumh→`  | `const memoizedValue = useMemo(() => computeExpensiveValue(), []);` |
+| `rucbh→` | `const name = useCallback(() => { }, []);`                          |
+| `rudbh→` | `useDebugValue(value);`                                             |
+
 ## React Components
+
+### Class Component
 
 ### `rcc`
 
 ```javascript
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class CLassName extends Component {
   render() {
@@ -103,14 +117,84 @@ class CLassName extends Component {
 export default ClassName;
 ```
 
+### Functional Component
+
 ### `rfc`
 
 ```javascript
-import React from "react";
+import React from 'react';
 
 const ComponentName = () => {
   return <div> </div>;
 };
 
 export default ComponentName;
+```
+
+## Redux Toolkit
+
+### Create Action
+
+### `rtca`
+
+```javascript
+import { createAction } from '@reduxjs/toolkit';
+
+const name = createAction('action/type');
+```
+
+### Create Reducer
+
+### `rtcr`
+
+```javascript
+import { createAction, createReducer } from '@reduxjs/toolkit';
+
+const name = createAction('action/type');
+
+const initialState = {};
+
+const reducerName = createReducer(initialState, builder => {
+  builder.addCase(name, (state, action) => {
+    // ...
+  });
+});
+```
+
+### Create Slice
+
+### `rtcs`
+
+```javascript
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {};
+
+export const sliceName = createSlice({
+  name: 'name',
+  initialState,
+  reducers: {
+    name: (state, action) => {
+      // ...
+    },
+  },
+});
+
+export const { name } = sliceName.actions;
+
+export default sliceName.reducer;
+```
+
+### Configure Store
+
+### `rts`
+
+```javascript
+import { configureStore } from '@reduxjs/toolkit';
+
+import reducer from 'location';
+
+export default configureStore({
+  reducerName: reducer,
+});
 ```
