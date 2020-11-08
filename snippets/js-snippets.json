@@ -4,6 +4,11 @@
     "body": ["console.log(${1:value});"],
     "description": "Creates default console.log(value);"
   },
+  "Console.error": {
+    "prefix": "cse",
+    "body": ["console.error(${1:value});"],
+    "description": "Creates default console.error(value);"
+  },
   "Console.log text": {
     "prefix": "cslt",
     "body": ["console.log('${1:text}', ${2:value});"],
