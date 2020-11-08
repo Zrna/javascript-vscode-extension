@@ -111,5 +111,40 @@
       "export default ${1:ComponentName};"
     ],
     "description": "Creates React Functional Component"
+  },
+  "React useState Hook": {
+    "prefix": "rush",
+    "body": "const [${1:name}, ${2:setName}] = useState(${3});",
+    "description": "Creates React useState Hook"
+  },
+  "React useEffect Hook": {
+    "prefix": "rueh",
+    "body": "useEffect(() => {${1}}${2});",
+    "description": "Creates React useEffect Hook"
+  },
+  "React useRef Hook": {
+    "prefix": "rurh",
+    "body": "const ${1:refName} = useRef(${2});",
+    "description": "Creates React useRef Hook"
+  },
+  "React useContext Hook": {
+    "prefix": "ruch",
+    "body": "const ${1:value} = useContext(${2});",
+    "description": "Creates React useContext Hook"
+  },
+  "React useMemo Hook": {
+    "prefix": "rumh",
+    "body": "const ${1:memoizedValue} = useMemo(() => computeExpensiveValue(${2}), [${2}]);",
+    "description": "Creates React useMemo Hook"
+  },
+  "React useCallback Hook": {
+    "prefix": "rucbh",
+    "body": "const ${1:name} = useCallback(() => { ${2} }, [${3}]);",
+    "description": "Creates React useCallback Hook"
+  },
+  "React useDebugValue Hook": {
+    "prefix": "rudbh",
+    "body": "useDebugValue(${1:value});",
+    "description": "Creates React useDebugValue Hook"
   }
 }
