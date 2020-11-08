@@ -2,7 +2,7 @@
   "name": "javascript-vscode-extension",
   "displayName": "JS/TS/ReactJS/Redux snippets",
   "description": "Simple extension for JavaScript, TypeScript, ReactJS and Redux/Redux-Toolkit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "lzrnic",
   "repository": {
     "type": "git",
